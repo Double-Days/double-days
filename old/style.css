@@ -1,0 +1,148 @@
+/**
+ * style.css
+ */
+
+body {
+  background: #FFF;
+  border-top: 30px solid #FFF;
+  margin: 0;
+  padding: 0;
+  font-size: 75%; /* 1em = 12 pixels */
+  font-family: 'Nunito', Verdana, sans-serif;
+  color: #000;
+}
+
+p { font-weight: normal; line-height: 2; margin: 10px 0; }
+
+a:link {
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 2;
+  padding: 2px;
+  margin: -2px;
+}
+
+a:visited {
+  color: #000;
+  font-weight: normal;
+  line-height: 2;
+}
+
+a:hover {
+  color: #000;
+  line-height: 2;
+}
+
+a.highlighted {
+  color: #CC6666;
+  background: #fff;
+}
+
+/* Header */
+.wrapper {
+  float: center;
+  width: 1020px;
+  margin: 0px auto 0px auto;
+  padding-left: 0px;
+}
+
+/* Logo */
+h1.logo {
+  width: 560px;
+  height: 89px;
+  background: url(images/title.gif) 0 0 no-repeat;
+  text-indent: -10000px; /* Hide the text miles off the screen */
+}
+
+/* Content */
+.content {
+  overflow: auto;
+  zoom: 1; /* For IE! */
+  margin-top: 0px;
+  position: relative;
+  z-index: 5; /* Bring this element (and everything contained within) higher */
+}
+
+/* Content underlay */
+.content-underlay {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: center center no-repeat;
+  display: none;
+}
+
+/* Top */
+.top {
+  float: left;
+  width: 500px;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+/* Topmid */
+.topmid {
+  float: left;
+  width: 160px;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+/* Topright */
+.topright {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+/* one */
+.one {
+  float: left;
+  width: 70px;
+  padding-right: 30px;
+  margin-top: 100px;
+}
+
+/* two*/
+.two {
+  float: left;
+  width: 213px;
+  padding-right: 30px;
+  margin-top: 100px;
+}
+
+/* three*/
+.three {
+  float: left;
+  width: 213px;
+  padding-right: 30px;
+  margin-top: 100px;
+}
+
+/* four*/
+.four {
+  float: left;
+  width: 213px;
+  padding-right: 30px;
+  margin-top: 100px;
+}
+
+/* five*/
+.five {
+  float: left;
+  width: 200px;
+  padding-right: 30px;
+  margin-top: 100px;
+}
+
+/* Footer */
+.footer {
+  float: left;
+  width: 1020px;
+  margin-top: 140px;
+  margin-bottom: 40px;
+}
