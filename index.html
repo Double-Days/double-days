@@ -1,156 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Double Days</title>
+  <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="/style.css" media="screen" rel="stylesheet">
+</head>
+<body onload="CoolClock.findAndCreateClocks()">
+  <div class="container">
+    <header class="grid">
+      <h1>Double Days</h1>
+      <p><span class="text-highlight">One half in Australia, one half in England.</span><br>
+      Research and inquiry with design outcomes.</p>
+    </header>
+    <div class="grid">
+      <div class="col-1-2">
+        <canvas class="CoolClock:doubleDays:30:noSeconds:+1"></canvas>
+        <h2>Aimee Jay (UK)</h2>
+        <p>Having built her experience in web, animation and motion graphics, Aimee is an interactive designer and researcher, whose work has always been characterised by her interest in travel, community and communication. Co-founding Double Days in 2011, Aimee's work with <i>Gather &amp; Fold</i> and <i>Designers Who...</i> challenge digital norms and notions of online publishing.</p>
+      </div>
+      <div class="col-1-2">
+        <canvas class="CoolClock:doubleDays:30:noSeconds:+10"></canvas>
+        <h2>Bonnie Abbott (AUS)</h2>
+        <p>Bonnie is a strategic designer, writer and researcher. Bonnie worked as editor at Australia's oldest design publication <i>Desktop</i> from 2013&mdash;2015, and has presented talks and workshops on self-publishing, adaptive design processes, and content-driven design. She currently teaches at RMIT and works as Creative Lead at In Common.</p>
+      </div>
+    </div>
+    <div class="grid text-highlight">
+      <h3>Current Inquiries</h3>
+      <div class="col-1-2">
+        <p class="text-underline">Design Infidelity: Aternative methods for thinking and acting</p>
+        <p>Bonnie and Aimee are currently conducting workshops and classes in <i>Design Infidelity</i>: a research, empathy and ideation methodology that seeks to augment the design process with skills and techniques used by non-design professionals. <a href="https://designinfidelity.com">View Project</a></p>
+      </div>
+      <div class="col-1-2">
+        <p class="text-underline">Resisting the styleguide: How can designers empower clients to produce their own branded material?</p>
+        <p>Can the designer equip the client with the tools to produce their own creative branding materials? In an ongoing project, we are exploring how to frame an appropriate space where a brand may be flexible yet allow the authentic production of material from its most invested stakeholder.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <h3>Past Projects</h3>
+      <div id="work">
+        <ul class="gallery">
+          <li><img alt="" src="images/DD_1.png"></li>
+          <li><img alt="" src="images/DD_2.png"></li>
+          <li><img alt="" src="images/DD_3.png"></li>
+          <li><img alt="" src="images/DD_4.png"></li>
+          <li><img alt="" src="images/DD_5.png"></li>
+          <li><img alt="" src="images/DD_6.png"></li>
+          <li><img alt="" src="images/DD_7.png"></li>
+          <li><img alt="" src="images/DD_8.png"></li>
+        </ul>
+      </div>
+      <div class="col-1-1">
+        <h4>Designers Who: offsite publishing, onsite commentary</h4>
+        <p>Bonnie, Aimee, and The Brandling's Anne Miltenberg conceived and built Designers Who to share design articles and host the commentary that surrounds it. DW contains no imagery and no articles, instead treating reader comments as a form of design publishing. <a href="https://designerswho.com">View Project</a></p>
+      </div>
+      <div class="col-1-1">
+        <h4>Design As Activity: A Workshop in 4 Parts</h4>
+        <p>A day-long intensive workshop that broke design practice into four pillars: writing, research, type and image making, and challenged students using unconventional processes to experiment within short timeframes. In conjunction with Paul Fuog (<a href="http://u-p.co">U-P.co</a>), Veronica Grow (<a href="http://newschoolfordesignandtypography.com/">Old School New School</a>) and Jack Musset (<a href="http://motherbird.com.au">Motherbird</a>).</p>
+      </div>
+      <div class="col-1-1">
+        <h4>Gather and Fold</h4>
+        <p>Over 15 months, we interviewed 29 creatives local to Melbourne about their process, practice and community. The interviews ran on a referral basis, meaning that each interviewee chose who was interviewed next, ensuring there was no author-led curation. The connections between disciplines, ages and experience levels were exposed as organically as possible, acting as a snapshot cross-section of Melbourne's wider creative scene in 2011-2013.<br>
+        The project initially ran as a blog, and was published as a book in 2014.<br>
+        <span class="text-highlight"><s>Buy a copy</s> Sold out</span></p>
+        <p>We have recently closed down the original web archive, but have made the book freely available as a download. <a href="http://double-days.com/gather.html">View project</a></p>
+      </div>
+      <footer>
+        <h3>Contact</h3>
+        <p><a href="mailto:hello@double-days.com" target="_blank">hello@double-days.com</a> <a href="http://www.twitter.com/Double_Days" target="_blank">@Double_Days</a></p>
+      </footer>
+    </div>
+  </div>
+  <script charset="utf-8" src="js/coolclock.js">
+  </script> 
+  <script type="text/javascript">
+                   var _gaq = _gaq || [];
+                   _gaq.push(['_setAccount', 'UA-28287305-2']);
+                   _gaq.push(['_trackPageview']);
 
-		<title>Double Days</title>
-		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Montserrat'>
-		<link rel="stylesheet" href="/style.css" media="screen">
-	</head>
-
-	<body onload="CoolClock.findAndCreateClocks()">
-
-		<div class="container">
-			<header class="grid">
-				<h1>Double Days</h1>
-
-				<p>
-					<span class="text-highlight">One half in Australia, one half in England.</span><br/>
-					Research and inquiry with design outcomes.
-				</p>
-			</header>
-
-			<div class="grid">
-				<div class="col-1-2">
-					<canvas class="CoolClock:doubleDays:30:noSeconds:+1"></canvas>
-					<h2>Aimee Jay (UK)</h2>
-					<p>
-						Having built her experience in web, animation and motion graphics, Aimee's skills in interactive design have always been characterised by her interest in community, communication and social good. Co-founding Double Days in 2011, Aimee's work with Gather &amp; Fold and Designers Who were built to challenge digital norms and notions of online publishing.
-					</p>
-					<p>
-						Aimee is currently working as a senior digital designer at D3R, as well as conducting research into distribution and communication tools within disaster-stricken communities.
-					</p>
-				</div>
-
-				<div class="col-1-2">
-					<canvas class="CoolClock:doubleDays:30:noSeconds:+10"></canvas>
-					<h2>Bonnie Abbott (AUS)</h2>
-					<p>
-						With a background in publication design, Bonnie's interest shifted to the designer-as-author model in 2011, writing with publications such as MADE Quarterly, Process Journal and Creative Review, and leading to the formation of Double Days and its experimental publishing projects.
-					</p>
-					<p>
-						Bonnie worked as editor at Australia's oldest design publication Desktop from 2013&mdash;2015, and has presented talks and workshops on self-publishing, adaptive design processes, and content-driven design. She wrote and taught RMIT's 'Design Infidelity' studio in 2015, and currently works as Creative Lead at In Common.
-					</p>
-				</div>
-			</div>
-
-			<div class="grid text-highlight">
-				<h3>Current Inquiries</h3>
-				<div class="col-1-2">
-					<p class="text-underline">
-						How can digital design help circulate improved building standards in low-literacy, earthquake affected communities?
-					</p>
-					<p>
-						Aimee is currently conducting research in Nepal, where an English builder is working to teach building standards for earthquake-resistant homes.
-					</p>
-				</div>
-
-				<div class="col-1-2">
-					<p class="text-underline">
-						Resisting the styleguide: How can designers empower clients to produce their own branded material?
-					</p>
-					<p>
-						Bonnie is working on a model that shifts the designer into a facilitator, providing the tools to enable clients to produce their own creative branding material. In an appropriate space where a brand may be flexible, the inquiry proposes that authentic production of such material can only come from an equipped stakeholder.
-					</p>
-				</div>
-			</div>
-
-			<div class="grid">
-				<h3>Past Projects</h3>
-				<div id="work">
-					<ul class="gallery">
-						<li><img src="images/DD_1.png" alt="" /></li>
-		        <li><img src="images/DD_2.png" alt="" /></li>
-		        <li><img src="images/DD_3.png" alt="" /></li>
-		        <li><img src="images/DD_4.png" alt="" /></li>
-		        <li><img src="images/DD_5.png" alt="" /></li>
-		        <li><img src="images/DD_6.png" alt="" /></li>
-		        <li><img src="images/DD_7.png" alt="" /></li>
-		        <li><img src="images/DD_8.png" alt="" /></li>
-					</ul>
-				</div>
-
-
-
-				<div class="col-1-1">
-					<h4>Designers Who: offsite publishing, onsite commentary</h4>
-					<p>
-						Bonnie, Aimee, and The Brandling's Anne Miltenberg conceived and built Designers Who to share design articles and host the commentary that surrounds it. DW contains no imagery and no articles, instead treating reader comments as a form of design publishing.
-						<a href="https://designerswho.com">View Project</a>
-					</p>
-				</div>
-
-				<div class="col-1-1">
-					<h4>Design Futures Lab: Public lecture program and promotion</h4>
-					<p>
-						Bonnie curated the weekly public talks delivered through RMIT's DFL. Seeking to deconstruct podium-to-audience delivery and challenge the tradition of 'thumbnail jpeg' promotion, speakers were invited to experiment with their lectures, and the themes informed the material and construction of the promotional posters.
-					</p>
-				</div>
-
-				<div class="col-1-1">
-					<h4>Design As Activity: A Workshop in 4 Parts</h4>
-					<p>
-						A day-long intensive workshop that broke design practice into four pillars: writing, research, type and image making, and challenged students using unconventional processes to experiment within short timeframes. In conjunction with Paul Fuog (<a href="http://u-p.co">U-P.co</a>), Veronica Grow (<a href="http://newschoolfordesignandtypography.com/">Old School New School</a>) and Jack Musset (<a href="http://motherbird.com.au">Motherbird</a>).
-					</p>
-				</div>
-
-				<div class="col-1-1">
-					<h4>#Platform Project with Mimi Zeigler and Neil Donnelly</h4>
-					<p>
-						As part of the D-Crit Summer Intensive, design writer attendees contributed 140-character critiques of their work and environment. After two weeks, these mini-critiques were published through public display.
-					</p>
-				</div>
-
-				<div class="col-1-1">
-					<h4>Gather and Fold: The Print Index</h4>
-					<p>
-						At the completion of the web-based publishing project, Gather and Fold was translated into a book. By interrogating its online origins, the publication's design and layout was informed by digital materials and approaches, affecting how the content was consumed, and leading to features like printed "tumblr" scrolling.
-						<span class="text-highlight"><s>Buy a copy</s> Sold out</span>
-					</p>
-				</div>
-
-				<div class="col-1-1">
-					<h4>Gather and Fold: The Web Index</h4>
-					<p>
-						Over 15 months, 29 creatives local to Melbourne were interviewed about their process, practice and community. The interviews ran on a referral basis, meaning that each interviewee chose who was interviewed next, ensuring there was no author-led curation. The connections between disciplines, ages and experience levels were exposed as organically as possible, acting as a snapshot cross-section of Melbourne's wider creative scene in 2011-2013.
-						<a href="http://gatherandfold.com">View archive</a>
-					</p>
-				</div>
-			</div>
-
-			<footer>
-				<h3>Contact</h3>
-				<p>
-					<a href="mailto:hello@double-days.com"target="_blank">hello@double-days.com</a></br>
-					<a href="http://www.twitter.com/Double_Days"target="_blank">@Double_Days</a>
-				</p>
-			</div>
-			</footer>
-		</div>
-
-		<script src="js/coolclock.js" charset="utf-8"></script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-28287305-2']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-	</body>
+                   (function() {
+                     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                   })();
+  </script>
+</body>
 </html>
